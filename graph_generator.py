@@ -105,7 +105,7 @@ if uploaded_files:
             fig2.update_layout(
                 height=600,
                 margin=dict(t=60, b=120),
-                xaxis=dict(tickformat='%d/%m', rangeslider_visible=True)
+                xaxis=dict(tickformat='%d/%m/%y', rangeslider_visible=True)
             )
 
             st.plotly_chart(fig2, use_container_width=True)
