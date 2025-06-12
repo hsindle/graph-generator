@@ -111,17 +111,3 @@ if uploaded_files:
             st.plotly_chart(fig2, use_container_width=True)
             st.divider()
 
-            # DOWNLOAD OPTIONS
-            st.subheader("⬇️ Download Graph Data as CSV")
-            st.download_button(
-                label="Download Hourly Sales CSV",
-                data=hourly_sales.to_csv().encode(),
-                file_name="hourly_sales.csv",
-                mime="text/csv"
-            )
-            st.download_button(
-                label="Download Daily Sales CSV",
-                data=daily_sales.to_csv(index=False).encode(),
-                file_name="daily_sales.csv",
-                mime="text/csv"
-            )
